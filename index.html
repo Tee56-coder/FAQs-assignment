@@ -8,14 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <h1>vvs store</h1>
-        <ul>
-            <li>images</li>
-            <li>faqs</li>
-        </ul>
-    </nav>
-    <section id="faq">
+   <section class="nav" id="nav">
+        <nav>
+            <h1>vvs store</h1>
+            <ul>
+                <li>Home</li>
+                <li><a href="#images">images</a></li>
+                <li><a href="#faq">About/faqs</a></li>
+            </ul>
+            <button>Order Now ➡️</button>
+        </nav>
+   </section>
+    <section class="faq" id="faq">
+        <h1 style="color: white; font-family: sans-serif; display: flex; justify-content: center; font-weight: 300; font-size: 2.5rem; padding-top: 3%;">
+            FAQs
+        </h1>
+
         <div class="questions">
             <div class="question"><button><span>What's my teachers name?</span><i class="fas fa-chevron-down d-arrow"></i></button>
                 <p>you can ask him. 😄😆</p>
@@ -43,6 +51,35 @@
                 </p>
              
             </div>
+        </div>
+    </section>
+    <section id="images">
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <div class="numbertext">1 / 3</div> 
+                <img src="image2.avif">
+                <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">2 / 3</div>
+                <img src="image2.jpg">
+                <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">3 / 3</div>
+                <img src="image3.jpg">
+                <div class="text">Caption Three</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
         </div>
     </section>
     <script src="script.js"></script>
