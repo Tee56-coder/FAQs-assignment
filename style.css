@@ -21,6 +21,12 @@ body{
   height: 100vh;
 }
 
+nav a{
+  outline: none;
+  color: #000000;
+  text-decoration: none;
+}
+
 nav{
   display: flex;
   justify-content: space-evenly;
