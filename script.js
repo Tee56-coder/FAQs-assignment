@@ -20,9 +20,6 @@ function toggleFAQ(button) {
     faq.classList.toggle('show');
     icon.classList.toggle('rotate');
 }
-
-
-
 buttons.forEach(button => {
     button.addEventListener('click', () => toggleFAQ(button));
 });
@@ -56,4 +53,22 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
+    if (slideIndex > slides.length) {
+        slideIndex = 1
+    }
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 2000);
 }
+
+// let slideIndex = 0;
+// showSlides();
+
+// function showSlides() {
+//   let i;
+//   let slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none";
+//   }
+//   slideIndex++;
+//    // Change image every 2 seconds
+// }
