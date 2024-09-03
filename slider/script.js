@@ -72,3 +72,4 @@ function resetTimer() {
 
 // Start the slideshow when the DOM is fully loaded
 document.addEventListener('DOMContentLoaded', initSlideshow);
+            
